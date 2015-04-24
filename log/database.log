@@ -1,0 +1,16 @@
+D, [2015-04-24T16:31:28.038541 #22075] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-04-24T16:31:28.040831 #22075] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  INSERT INTO "properties" DEFAULT VALUES
+D, [2015-04-24T16:31:28.196892 #22075] DEBUG -- :   [1m[36m (155.6ms)[0m  [1mcommit transaction[0m
+D, [2015-04-24T16:31:31.428152 #22075] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2015-04-24T16:31:31.435976 #22075] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mUPDATE "properties" SET "title" = ? WHERE "properties"."id" = ?[0m  [["title", "My Title"], ["id", 22]]
+D, [2015-04-24T16:31:31.572778 #22075] DEBUG -- :   [1m[35m (136.5ms)[0m  commit transaction
+D, [2015-04-24T16:31:33.438196 #22075] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+D, [2015-04-24T16:31:33.438963 #22075] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2015-04-24T16:31:33.439669 #22075] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-04-24T16:31:33.440492 #22075] DEBUG -- :   [1m[35m (0.3ms)[0m  commit transaction
+D, [2015-04-24T16:31:33.440957 #22075] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-04-24T16:31:33.441497 #22075] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2015-04-24T16:31:33.441932 #22075] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-04-24T16:31:33.442459 #22075] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction
+D, [2015-04-24T16:31:33.442888 #22075] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2015-04-24T16:31:33.443794 #22075] DEBUG -- :   [1m[35m (0.1ms)[0m  commit transaction

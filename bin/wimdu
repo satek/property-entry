@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+src_dir = File.expand_path('../../src', __FILE__)
+models_dir = File.expand_path('../../src/models_dir', __FILE__)
+$LOAD_PATH.unshift(src_dir) unless $LOAD_PATH.include?(src_dir)
+$LOAD_PATH.unshift(models_dir) unless $LOAD_PATH.include?(models_dir)
+require "wimdu"
+
+Wimdu.start(ARGV)
