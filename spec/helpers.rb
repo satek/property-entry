@@ -25,7 +25,7 @@ module Helpers
     expect(process.output).to include("Title: ")
     return unless params.has_key? :title
     type params[:title]
-    expect(process.output).to include("Property: ")
+    expect(process.output).to include("Property")
     return unless params.has_key? :property_type
     type params[:property_type]
     expect(process.output).to include("Address: ")
