@@ -1,9 +1,16 @@
 require "active_record"
 
+env = ENV['WIMDU_ENV']
+db = if env
+       "#{env}.db"
+     else
+       "wimdu.db"
+     end
+
 ActiveRecord::Base.logger = Logger.new(File.open(File.expand_path('../../log/database.log', __FILE__), 'w'))
 ActiveRecord::Base.establish_connection(
   :adapter  => 'sqlite3',
-  :database => File.expand_path('../../data/wimdu.db', __FILE__)
+  :database => File.expand_path("../../data/#{db}", __FILE__)
 )
 ActiveRecord::Schema.define do
   unless ActiveRecord::Base.connection.tables.include? 'properties'
